@@ -68,6 +68,12 @@ export default defineConfig((config) => {
         },
       },
     },
+    server: {
+      host: '0.0.0.0', // Ne pas changer, c'est pour l'écoute sur toutes les interfaces
+      port: 7860,    // Ne pas changer, c'est le port interne de l'application
+      // Ajoutez votre hôte Railway à la liste des hôtes autorisés
+      allowedHosts: ['boltdiy-production-c336.up.railway.app'],
+    }
   };
 });
 
